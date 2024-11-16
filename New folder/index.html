@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></link>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"></div>
+    <!-- <h1>Login</h1>
+        <i class="fa-solid fa-user"></i>
+        <input type="fname" name="fname" id="fname" placeholder="FirstName" required>
+        <label for="fname">FirstName</label> -->
+    <button type="submit" class="button" onclick="openPopup()">Submit</button>
+    <div class="popup" id="popup">
+        <img src="pngegg.png">
+        <h2>Thank You!</h2>
+        <p>Your details have been sucessfully submitted again thanks!</p>
+        <button type="button"  onclick="closePopup()">OK</button>
+    </div>
+    
+<script>
+let popup = document.getElementById("popup");
+function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+</script>
+</body>
+</html>
